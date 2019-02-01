@@ -2,6 +2,12 @@
 
 <h3>Reviews</h3>
 
+
+<script>
+    $(function () {
+        $("#reviews-tool").accordion();
+    });
+</script>
 @using (Ajax.BeginForm("_ReviewsForOpera",
                 new { OperaId = ViewBag.OperaId },
                 new AjaxOptions { UpdateTargetId = "reviews-tool" }))
