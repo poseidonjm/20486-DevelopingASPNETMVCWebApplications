@@ -11,7 +11,11 @@
     <title>All Photos</title>
 </head>
 <body>
-    <div> 
+    <div>
+        Menu: @Html.MvcSiteMap().Menu(false, false, true)
+
+        Breadcrumb Trail: @Html.MvcSiteMap().SiteMapPath()
+
         <h2>All Photos</h2>
 
         <p>

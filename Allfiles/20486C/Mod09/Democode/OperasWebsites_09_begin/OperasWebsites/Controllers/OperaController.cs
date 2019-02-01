@@ -15,6 +15,7 @@ namespace OperasWebSite.Controllers
         //
         // GET: /Opera/
 
+        [OutputCache(Duration = 60, VaryByParam = "none")]
         public ActionResult Index()
         {
             return View("Index", contextDB.Operas.ToList());
