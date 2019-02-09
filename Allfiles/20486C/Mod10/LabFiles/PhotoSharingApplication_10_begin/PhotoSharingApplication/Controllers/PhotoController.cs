@@ -144,7 +144,7 @@ namespace PhotoSharingApplication.Controllers
 
         public ActionResult SlideShow()
         {
-            throw new NotImplementedException("The SlideShow action is not yet ready");
+            return View("SlideShow", context.Photos.ToList());
         }
     }
 }

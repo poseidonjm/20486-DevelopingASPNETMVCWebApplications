@@ -1,18 +1,10 @@
 ﻿@model PhotoSharingApplication.Models.Photo
 
 @{
-    Layout = null;
+    ViewBag.Title = Model.Title;
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@Model.Title</title>
-</head>
-<body>
-    <div>
         <h2>"@Model.Title"</h2>
 
         @if (Model.PhotoFile != null)
@@ -52,6 +44,3 @@
             @Html.ActionLink("Back to List", "Index") |
             @Html.ActionLink("Delete This Photo", "Delete", new { id = Model.PhotoID })
         </p>
-    </div>
-</body>
-</html>
