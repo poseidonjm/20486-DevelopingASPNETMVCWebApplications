@@ -189,6 +189,7 @@
     <Content Include="Images\ripples.jpg" />
     <Content Include="Images\rockpool.jpg" />
     <Content Include="Images\track.JPG" />
+    <Content Include="Scripts\SlideShow.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
