@@ -257,3 +257,5 @@ C:\Users\eladk\dev\Rolling Lab Folder\PhotoSharingApplication_11_end\PhotoSharin
 C:\Users\eladk\dev\Rolling Lab Folder\PhotoSharingApplication_11_end\PhotoSharingTests\obj\Debug\PhotoSharingTests.csprojResolveAssemblyReference.cache
 C:\Users\eladk\dev\Rolling Lab Folder\PhotoSharingApplication_11_end\PhotoSharingTests\obj\Debug\PhotoSharingTests.dll
 C:\Users\eladk\dev\Rolling Lab Folder\PhotoSharingApplication_11_end\PhotoSharingTests\obj\Debug\PhotoSharingTests.pdb
+C:\20486-DevelopingASPNETMVCWebApplications\Allfiles\20486C\Mod12\LabFiles\PhotoSharingApplication_12_begin\PhotoSharingTests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\20486-DevelopingASPNETMVCWebApplications\Allfiles\20486C\Mod12\LabFiles\PhotoSharingApplication_12_begin\PhotoSharingTests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll

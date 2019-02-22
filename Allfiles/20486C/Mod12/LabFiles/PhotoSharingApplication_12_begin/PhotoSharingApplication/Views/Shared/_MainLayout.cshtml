@@ -39,6 +39,12 @@
         </div>
         <div id="breadcrumb">
             @Html.MvcSiteMap().SiteMapPath()
+            @if (Session["Favorites"] != null)
+            {
+            <div id="favorites-link">
+                @Html.ActionLink("Favorite Photos", "FavoritesSlideShow", "Photo")
+            </div>
+            }
         </div>
         <div>
             @RenderBody()

@@ -12,11 +12,27 @@ namespace PhotoSharingApplication
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                name: "PhotoApi",
+                routeTemplate: "api/photos/{id}",
+                defaults: new { controller = "PhotoApi", action = "GetPhotoById" },
+                constraints: new { id = "[0-9]+" }
             );
 
+            config.Routes.MapHttpRoute(
+                name: "PhotoTitleApi",
+                routeTemplate: "api/photos/{title}",
+                defaults: new { controller = "PhotoApi", action = "GetPhotoByTitle" }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "PhotosApi",
+                routeTemplate: "api/photos",
+                defaults: new { controller = "PhotoApi", action = "GetAllPhotos" }
+            );
+
+            var json = config.Formatters.JsonFormatter;
+            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
         }
     }
 }

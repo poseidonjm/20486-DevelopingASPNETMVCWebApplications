@@ -37,6 +37,12 @@
         </span>
     </div>
 
+    <div id="addtofavorites">
+        @Ajax.ActionLink("Add this photo to your favorites", "AddFavorite","Photo",
+       new { PhotoId = Model.PhotoID },
+       new AjaxOptions { UpdateTargetId = "addtofavorites", HttpMethod = "GET", InsertionMode = InsertionMode.Replace })
+    </div>
+
 </div>
 
 @Html.Action("_CommentsForPhoto", "Comment", new { PhotoId = Model.PhotoID })
